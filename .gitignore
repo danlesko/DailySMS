@@ -4,5 +4,8 @@ bin/
 .env
 venv/
 
+# Remove credentials from repo because twilio auto detects it some how
+src/credentials/
+
 # Get this fucking Mac Dir out of here
 .DS_Store

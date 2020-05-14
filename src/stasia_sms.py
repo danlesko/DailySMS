@@ -1,12 +1,17 @@
 # Download the helper library from https://www.twilio.com/docs/python/install
 from twilio.rest import Client
+import credentials.config as config
 import random
 
 
 # Your Account Sid and Auth Token from twilio.com/console
 # DANGER! This is insecure. See http://twil.io/secure
-account_sid = 'ACa5bb8153262cdeb2f8ab7f0cb1da17d8'
-auth_token = '6bc0633814f18406ff86d05f39b70568'
+account_sid = config.account_sid
+auth_token = config.auth_token
+
+print(auth_token)
+print(account_sid)
+
 client = Client(account_sid, auth_token)
 
 message_array=["Good morning beautiful, have a wonderful day!", "A nass ta see ya, SO NICE TO SEE YA. I love you baby.", 
@@ -14,12 +19,12 @@ message_array=["Good morning beautiful, have a wonderful day!", "A nass ta see y
 "I mean okay, maybe this isn't the greatest python script in the world. But how many women can say that their guy wrote a python script to say \"I love you, beautiful\" every day?",
 ]
 
-the_message=message_array[random.randint(0,len(message_array))]
+the_message=message_array[random.randint(0,len(message_array)-1)]
 
 message = client.messages \
     .create(
          body=the_message,
-		     messaging_service_sid='MGf642327194a353ea756d1a67e11eac13',
+		     messaging_service_sid=config.messaging_service_sid,
          to='+13304174796'
      )
 
