@@ -4,6 +4,8 @@ bin/
 .env
 venv/
 
+# Remove log files
+
 # Remove credentials from repo because twilio auto detects it some how
 src/credentials/config.py
 
