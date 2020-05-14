@@ -6,7 +6,7 @@ Anastasia M. B. is the inspiration for this project.
 
 ### More to come...
 
-### Add your own config.py file like so:
+### Add your own `src/credentials/config.py` file like so:
 ```
 #!/usr/bin/env python
 
