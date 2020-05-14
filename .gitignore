@@ -1,0 +1,8 @@
+# Virtual Environment Python Ignore
+lib/
+bin/
+.env
+venv/
+
+# Get this fucking Mac Dir out of here
+.DS_Store
