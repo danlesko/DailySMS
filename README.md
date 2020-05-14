@@ -12,7 +12,7 @@ Anastasia M. B. is the inspiration for this project.
 
 account_sid = 'someString'
 auth_token = 'someString'
-messaging_service_sid = 'someString
+messaging_service_sid = 'someString'
 stasia_number = '+ some number starting with, must start with +1 for US numbers'
 
 ```
