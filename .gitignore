@@ -5,7 +5,7 @@ bin/
 venv/
 
 # Remove credentials from repo because twilio auto detects it some how
-src/credentials/
+src/credentials/config.py
 
 # Get this fucking Mac Dir out of here
 .DS_Store

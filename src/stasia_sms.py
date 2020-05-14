@@ -25,7 +25,7 @@ message = client.messages \
     .create(
          body=the_message,
 		     messaging_service_sid=config.messaging_service_sid,
-         to='+13304174796'
+         to='+12407557561'
      )
 
 print(the_message + " - " + message.sid)
