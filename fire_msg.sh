@@ -2,7 +2,7 @@
 
 timestamp=$(date +%s)
 
-cd /Users/dalesko/Code/Twilio/DailySMS
+cd /Users/$(whoami)/$DAILY_SMS_DIR
 
 source bin/activate
 
@@ -15,5 +15,3 @@ log="${timestamp} - ${message_id}"
 echo $log >> log/sent_msgs.log
 
 deactivate
-
-
